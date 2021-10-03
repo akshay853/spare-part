@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #052016;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #487865;
+}
+</style>
+</head>
+<body style="height: 688px">
+
+    <div style="height: 511px">
+        <ul>
+  <li><a href="/adminhome">BACK</a></li>
+ <!-- <li><a href="addclient.html">add client</a></li>
+  <li><a href="view client.html">view client</a></li>
+  <li><a href="update product.html">update client</a></li>
+  <li><a href="addcategories.html">view user</a></li>
+  <li><a href="view categories.html">update user</a></li>
+  <li><a href="update categories.html">view categories</a></li>  
+  <li><a href="view user.html">view products</a></li>
+  <li><a href="viewrating.html">view rating</a></li>
+  <li><a href="main home.html">Logout</a></li> -->
+</ul>
+        <div style="position: absolute; background-color: BLACK; top: 217px; left: 15px; height: 363px; width: 1500px;">
+
+            <div style="position: absolute; top: 17px; left: 346px; width: 750px; height: 343px; background-color: #CCFFFF;">
+           <center>
+                 <h1 style=" text-align: center; font-size: large; background-color: #CCFFFF;">Add Client</h1>
+                </center>
+                
+                <form action="/addclient" style="background-color: #CCCCCC; text-align: center;" method="POST">
+                    <label>Client id:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="c_id" type="text" name="c_id"/><br /><br />
+                    <label>Client name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="c_name" type="text" name="c_name" /><br /><br />
+                    <label>Phone number:</label>&nbsp;
+                    <input id="phn_no" type="text" name="phn_no" /><br /><br />
+                    <label>Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="address" type="text" name="address" /><br /><br />
+                    <input id="add" type="submit" value="Add"/>
+
+                    {% if msg%}
+
+                    <label>{{msg}}</label>
+                    {%endif%}
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

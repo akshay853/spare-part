@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #052016;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #487865;
+}
+</style>
+</head>
+<body style="height: 688px">
+
+    <div style="height: 511px">
+        <ul>
+  <li><a class="active" href="#home">BACK</a></li>
+ <!-- <li><a href="view products.html">view product</a></li>`   
+  <li><a href="addproducts.html">add products</a></li>  
+  <li><a href="update product.html">update product</a></li>
+  <li><a href="addcategories.html">add category</a></li>
+  <li><a href="view categories.html">view categories</a></li>
+  <li><a href="update categories.html">update categories</a></li>
+  <li><a href="view user.html">view user</a></li>
+  <li><a href="viewrating.html">view rating</a></li> 
+  <li><a href="main home.html">Logout</a></li> -->
+</ul>
+       <!-- <img alt="" src="images (2).jpg" style="height: 160px; width: 1320px" /> -->
+        <div style="position: absolute; background-color: BLACK; top: 217px; left: 15px; height: 363px; width: 1500px;">
+
+            <div style="position: absolute; top: 17px; left: 346px; width: 750px; height: 343px; background-color: #CCFFFF;">
+           <center>
+                 <h1 style=" text-align: center; font-size: large; background-color: #CCFFFF;">Update Category</h1>
+                </center>
+                
+                <form action="/updatecategories" style="background-color: #CCCCCC; text-align: center;" method="POST">
+                    <label>Category id:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="cat_id" type="text" /><br /><br />
+                    <label>Category name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="cat_name" type="text" /><br /><br />
+                    <input id="add" type="submit" value="Add" />
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

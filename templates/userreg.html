@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2f3252;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #487865;
+}
+</style>
+</head>
+<body style="height: 688px">
+
+    <div style="height: 511px">
+        <ul>
+  <li><a class="active" href="/">BACK</a></li>
+</ul>
+      
+        <div style="position: absolute; background-color: BLACK; top: 217px; left: 15px; height: 363px; width: 1500px;">
+
+            <div style="position: absolute; top: 17px; left: 346px; width: 750px; height: 343px; background-color: #CCFFFF;">
+           <center>
+                 <h1 style=" text-align: center; font-size: large; background-color: #CCFFFF;">REGISTRATION</h1>
+               <form action="/registration" style="background-color: #CCCCCC; text-align: center;" method="POST">
+                    <label>user id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="o_details" type="text" name="userid"/><br /><br />
+                    <label>username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="loc" type="text" name="username"/><br /><br />
+                    <label>address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>&nbsp;<input id="plot_size" type="text" name="address" /><br /><br />
+                    <label>phone number</label><input id="pro_des" type="text" name="phone_no" /><br /><br />
+                    <label>email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input id="Text1" type="text" name="email" /><br /><br />
+                    <label>password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input id="pass" type="text" name="pass"/><br />
+            <input type="radio" id="user" name="user" value="user">
+            <label for="html">USER</label>
+            <input type="radio" id="user" name="user" value="seller">
+            <label for="html">Seller/Client</label>
+                   
+                   <br> <input type="submit" value="register" />
+                   {% if msg%}
+                   <label>{{msg}}</label>
+                   {% endif %}
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
